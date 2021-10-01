@@ -454,3 +454,55 @@ input:focus {
   justify-content: space-between;
   margin: 100px auto 50px;
 }
+
+/*------------------------------------------CART PAGE-------------------------------------*/
+
+.cart-page {
+  margin: 80px auto;
+}
+.cart-page table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.cart-info {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cart-page th {
+  text-align: left;
+  padding: 5px;
+  background: dodgerblue;
+  color: white;
+  font-weight: normal;
+}
+.cart-page th:first-child {
+  padding-left: 100px;
+}
+
+.cart-page td {
+  padding: 10px 5px;
+}
+
+.cart-page td input {
+  width: 40px;
+  height: 30px;
+  padding: 5px;
+  margin-left: 10px;
+}
+
+.cart-page td a {
+  color: dodgerblue;
+  font-size: 12px;
+}
+
+.cart-page td img {
+  width: 80px;
+  height: 80px;
+  margin-right: 10px;
+}
+
+.cart-page tr td:last-child {
+  padding-left: 10px;
+}
