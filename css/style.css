@@ -117,6 +117,7 @@ p {
   padding: 10px;
   min-width: 200px;
   margin-bottom: 50px;
+  transition: transform 0.5s;
 }
 
 .col-4 img {
@@ -129,4 +130,155 @@ p {
   position: relative;
   line-height: 60px;
   color: #555;
+}
+
+.title::after {
+  content: "";
+  background-color: dodgerblue;
+  width: 80px;
+  height: 5px;
+  border-radius: 5px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+h4 {
+  color: #555;
+  font-weight: normal;
+}
+
+.col-4 p {
+  font-size: 14px;
+}
+
+.raiting {
+  color: dodgerblue;
+}
+
+.col-4:hover {
+  transform: translateY(-5px);
+}
+
+.offer {
+  background: radial-gradient(white, dodgerblue);
+  margin-top: 80px;
+  padding: 20px 0;
+}
+
+.col-2 .offer-img {
+  padding: 50px;
+}
+
+.small {
+  color: #555;
+}
+
+/* testimonial */
+
+.testimonial {
+  margin: 100px;
+}
+
+.testimonial .col-3 {
+  text-align: center;
+  padding: 40px 20px;
+  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.5s;
+}
+
+.testimonial .col-3 img {
+  width: 60px;
+  margin-top: 20px;
+  border-radius: 50%;
+}
+
+.testimonial .col-3:hover {
+  transform: translateY(-10px);
+}
+
+.testimonial p {
+  font-size: 12px;
+  color: #777;
+}
+
+.testimonial h3 {
+  font-weight: 600;
+  color: #777;
+  font-size: 16px;
+}
+/* BRANDS */
+.brands {
+  margin: 100px auto;
+}
+
+.col-5 {
+  width: 160px;
+}
+
+.col-5 img {
+  width: 100%;
+  cursor: pointer;
+  filter: grayscale(100%);
+}
+
+.col-5 img:hover {
+  filter: grayscale(0);
+}
+
+.footer {
+  background: black;
+  color: #8a8a8a;
+  font-size: 14px;
+  padding: 60px 0 20px;
+}
+
+.footer h3 {
+  color: white;
+  margin-bottom: 20px;
+}
+
+.footer-col-1,
+.footer-col-2,
+.footer-col-3,
+.footer-col-4 {
+  min-width: 250px;
+  margin-bottom: 20px;
+}
+
+.footer-col-1 {
+  flex-basis: 30%;
+}
+
+.footer-col-2 {
+  flex: 1;
+  text-align: center;
+}
+.footer-col-2 img {
+  width: 180px;
+  margin-bottom: 20px;
+}
+
+.footer-col-3,
+.footer-col-4 {
+  flex-basis: 12%;
+  text-align: center;
+}
+
+.footer ul {
+  list-style: none;
+}
+
+.app-logo {
+  margin-top: 20px;
+}
+
+.app-logo img {
+  width: 140px;
+}
+
+.copyrighrt {
+  text-align: center;
 }
