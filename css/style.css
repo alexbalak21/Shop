@@ -1,5 +1,5 @@
 :root {
-  --text-color: grey;
+  --text-color: #555;
 }
 
 * {
@@ -30,6 +30,12 @@ nav ul {
 nav ul li {
   display: inline-block;
   margin-right: 20px;
+}
+
+.menu-icon {
+  width: 28px;
+  margin-left: 20px;
+  display: none;
 }
 
 a {
@@ -281,4 +287,32 @@ h4 {
 
 .copyrighrt {
   text-align: center;
+}
+
+/* MEDIA QUERY FOR MENU */
+
+@media only screen and (max-width: 800px) {
+  nav ul {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    background: #333;
+    color: white !important;
+    width: 100%;
+    overflow: hidden;
+    transition: max-height 0.5s;
+  }
+  nav ul li {
+    display: block;
+    margin-right: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  nav ul li a {
+    color: white;
+  }
+  .menu-icon {
+    display: block;
+    cursor: pointer;
+  }
 }
