@@ -504,6 +504,22 @@ input:focus {
   margin-right: 10px;
 }
 
-.cart-page tr td:last-child {
-  padding-left: 10px;
+.total-price {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.total-price table {
+  margin-top: 50px;
+  border-top: 3px solid dodgerblue;
+  width: 100%;
+  max-width: 450px;
+}
+
+.cart-page th:last-child {
+  text-align: right;
+}
+
+.cart-page td:last-child {
+  text-align: right;
 }
