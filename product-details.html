@@ -1,208 +1,229 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
-    />
-    <link rel="stylesheet" href="css/style.css" />
-    <title>Product Details - Shop</title>
-  </head>
-  <body>
-    <div class="container">
-      <!--------------------------------------------------------------------------------------------- NAVBAR ---------------------------------------------->
-      <div class="navbar">
-        <div class="logo">
-          <img src="assets/img/logo.png" width="125px" />
-        </div>
-        <nav>
-          <ul id="menuItems">
-            <li><a href="">Home</a></li>
-            <li><a href="">Producs</a></li>
-            <li><a href="">About</a></li>
-            <li><a href="">Contact</a></li>
-            <li><a href="">Account</a></li>
-          </ul>
-        </nav>
-        <img src="assets/img/cart.png" whith="30px" height="30px" />
-        <img
-          class="menu-icon"
-          onclick="menuToggle()"
-          src="assets/img/menu.png"
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+            rel="stylesheet"
         />
-      </div>
-    </div>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+        />
+        <link rel="stylesheet" href="css/style.css" />
+        <title>Product Details - Shop</title>
+    </head>
+    <body>
+        <div class="container">
+            <!--------------------------------------------------------------------------------------- NAVBAR START -------------------------->
+            <div class="navbar">
+                <div class="logo">
+                    <a href="/">
+                        <img src="assets/img/logo.png" width="125px" />
+                    </a>
+                </div>
 
-    <!----------------------------------------------------------------------------------- PRODUCT DETAILS -------------------------------------------------->
-    <section class="small-container single-product">
-      <div class="row">
-        <div class="col-2">
-          <a id="imgLink" href="assets/img/gallery-1.jpg"">
-          <img id="mainImg" src="assets/img/gallery-1.jpg" />
-        </a>
-          <div class="small-img-row">
-            <div class="small-img-col">
-              <img onclick="mainImgCh(1)" src="assets/img/gallery-1.jpg" />
+                <nav>
+                    <ul id="menuItems">
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/products.html">Producs</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Contact</a></li>
+                        <li><a href="/product-details.html">Details</a></li>
+                        <li><a href="account.html">Account</a></li>
+                    </ul>
+                </nav>
+                <a href="/cart.html"
+                    ><img src="assets/img/cart.png" whith="30px" height="30px"
+                /></a>
+
+                <img
+                    class="menu-icon"
+                    onclick="menuToggle()"
+                    src="assets/img/menu.png"
+                />
             </div>
-            <div class="small-img-col">
-              <img onclick="mainImgCh(2)" src="assets/img/gallery-2.jpg" />
+            <!--------------------------------------------------------------------------------------- NAVBAR END -------------------------->
+        </div>
+
+        <!----------------------------------------------------------------------------------- PRODUCT DETAILS -------------------------------------------------->
+        <section class="small-container single-product">
+            <div class="row">
+                <div class="col-2">
+                    <img id="mainImg" src="assets/img/gallery-1.jpg" />
+
+                    <div class="small-img-row">
+                        <div class="small-img-col">
+                            <img
+                                onclick="mainImgCh(1)"
+                                src="assets/img/gallery-1.jpg"
+                            />
+                        </div>
+                        <div class="small-img-col">
+                            <img
+                                onclick="mainImgCh(2)"
+                                src="assets/img/gallery-2.jpg"
+                            />
+                        </div>
+                        <div class="small-img-col">
+                            <img
+                                onclick="mainImgCh(3)"
+                                src="assets/img/gallery-3.jpg"
+                            />
+                        </div>
+                        <div class="small-img-col">
+                            <img
+                                onclick="mainImgCh(4)"
+                                src="assets/img/gallery-4.jpg"
+                            />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <p>Home / T-Shirt</p>
+                    <h1>Red Printed T-Shirt by HRX</h1>
+                    <div class="raiting">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <i class="far fa-star"></i>
+                        <a href="">30 ratings</a>
+                    </div>
+                    <h4>50.00 €</h4>
+                    <select>
+                        <option>Select Size</option>
+                        <option>S</option>
+                        <option>M</option>
+                        <option>L</option>
+                        <option>XL</option>
+                        <option>XXL</option>
+                    </select>
+                    <div class="qte">
+                        <span>Quantity</span>
+                        <input type="number" value="1" min="1" />
+                    </div>
+                    <br />
+                    <a href="" class="btn">Add to Cart</a>
+                    <h3>Producrt Details</h3>
+                    <p>
+                        Give Your summer wardrobe a style upgrade with the HTX
+                        Men's Active T-shirt. Team it with a pair of shorts for
+                        your morning Workout or a denims for an evening out with
+                        the guys.
+                    </p>
+                </div>
             </div>
-            <div class="small-img-col">
-              <img onclick="mainImgCh(3)" src="assets/img/gallery-3.jpg" />
+        </section>
+        <!----------------------------------------------------------------------------------------------------- RELATED PRODUCTS ---------------------------------------->
+        <section class="small-container">
+            <div class="row row-2">
+                <h2>Related Products</h2>
+                <p>View More</p>
             </div>
-            <div class="small-img-col">
-              <img onclick="mainImgCh(4)" src="assets/img/gallery-4.jpg" />
+            <div class="row">
+                <div class="col-4">
+                    <img src="assets/img/product-1.jpg" />
+                    <h4>Red T-shirt</h4>
+                    <div class="raiting">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <p>50.00 €</p>
+                </div>
+
+                <div class="col-4">
+                    <img src="assets/img/product-2.jpg" />
+                    <h4>Red T-shirt</h4>
+                    <div class="raiting">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <p>50.00 €</p>
+                </div>
+
+                <div class="col-4">
+                    <img src="assets/img/product-3.jpg" />
+                    <h4>Red T-shirt</h4>
+                    <div class="raiting">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <p>50.00 €</p>
+                </div>
+
+                <div class="col-4">
+                    <img src="assets/img/product-4.jpg" />
+                    <h4>Red T-shirt</h4>
+                    <div class="raiting">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <p>50.00 €</p>
+                </div>
             </div>
-          </div>
-        </div>
-        <div class="col-2">
-          <p>Home / T-Shirt</p>
-          <h1>Red Printed T-Shirt by HRX</h1>
-          <div class="raiting">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star-half-alt"></i>
-            <i class="far fa-star"></i>
-            <a href="">30 ratings</a>
-          </div>
-          <h4>50.00 €</h4>
-          <select>
-            <option>Select Size</option>
-            <option>S</option>
-            <option>M</option>
-            <option>L</option>
-            <option>XL</option>
-            <option>XXL</option>
-          </select>
-          <div class="qte">
-            <span>Quantity</span>
-            <input type="number" value="1" min="1" />
-          </div>
-          <br />
-          <a href="" class="btn">Add to Cart</a>
-          <h3>Producrt Details</h3>
-          <p>
-            Give Your summer wardrobe a style upgrade with the HTX Men's Active
-            T-shirt. Team it with a pair of shorts for your morning Workout or a
-            denims for an evening out with the guys.
-          </p>
-        </div>
-      </div>
-    </section>
-    <!----------------------------------------------------------------------------------------------------- RELATED PRODUCTS ---------------------------------------->
-    <section class="small-container">
-      <div class="row row-2">
-        <h2>Related Products</h2>
-        <p>View More</p>  
+        </section>
 
-      </div>
-      <div class="row">
-      <div class="col-4">
-        <img src="assets/img/product-1.jpg" />
-        <h4>Red T-shirt</h4>
-        <div class="raiting">
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star-half-alt"></i>
-          <i class="far fa-star"></i>
-        </div>
-        <p>50.00 €</p>
-      </div>
-
-      <div class="col-4">
-        <img src="assets/img/product-2.jpg" />
-        <h4>Red T-shirt</h4>
-        <div class="raiting">
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star-half-alt"></i>
-          <i class="far fa-star"></i>
-        </div>
-        <p>50.00 €</p>
-      </div>
-
-      <div class="col-4">
-        <img src="assets/img/product-3.jpg" />
-        <h4>Red T-shirt</h4>
-        <div class="raiting">
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star-half-alt"></i>
-          <i class="far fa-star"></i>
-        </div>
-        <p>50.00 €</p>
-      </div>
-
-      <div class="col-4">
-        <img src="assets/img/product-4.jpg" />
-        <h4>Red T-shirt</h4>
-        <div class="raiting">
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star"></i>
-          <i class="fas fa-star-half-alt"></i>
-          <i class="far fa-star"></i>
-        </div>
-        <p>50.00 €</p>
-      </div>
-    </div>
-      </section>
-
-    <!------------------------------------------------------------------------------------------------------------- FOOTER ------------------------------------------>
-    <footer class="footer">
-      <div class="container">
-        <div class="row">
-          <div class="footer-col-1">
-            <h3>Download Our App</h3>
-            <p>Download our App for Android and Ios mobile phone.</p>
-            <div class="app-logo">
-              <img src="assets/img/play-store.png" />
-              <img src="assets/img/app-store.png" />
+        <!------------------------------------------------------------------------------------------------------------- FOOTER ------------------------------------------>
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col-1">
+                        <h3>Download Our App</h3>
+                        <p>
+                            Download our App for Android and Ios mobile phone.
+                        </p>
+                        <div class="app-logo">
+                            <img src="assets/img/play-store.png" />
+                            <img src="assets/img/app-store.png" />
+                        </div>
+                    </div>
+                    <div class="footer-col-2">
+                        <img src="assets/img/logo-white.png" />
+                        <p>
+                            Our purpose is To Sustainably Make the Pleasure and
+                            Benefits of Sports Accessible to the Many.
+                        </p>
+                    </div>
+                    <div class="footer-col-3">
+                        <h3>Useful Links</h3>
+                        <ul>
+                            <li>Coupons</li>
+                            <li>Blog Post</li>
+                            <li>Return Policy</li>
+                            <li>Join Affiliate</li>
+                        </ul>
+                    </div>
+                    <div class="footer-col-4">
+                        <h3>Folow Us</h3>
+                        <ul>
+                            <li>Facebook</li>
+                            <li>Twiter</li>
+                            <li>Instagram</li>
+                            <li>Youtube</li>
+                        </ul>
+                    </div>
+                </div>
+                <hr />
+                <p class="copyrighrt">Copyrighrt &#169; 2021 - Alex Balak</p>
             </div>
-          </div>
-          <div class="footer-col-2">
-            <img src="assets/img/logo-white.png" />
-            <p>
-              Our purpose is To Sustainably Make the Pleasure and Benefits of
-              Sports Accessible to the Many.
-            </p>
-          </div>
-          <div class="footer-col-3">
-            <h3>Useful Links</h3>
-            <ul>
-              <li>Coupons</li>
-              <li>Blog Post</li>
-              <li>Return Policy</li>
-              <li>Join Affiliate</li>
-            </ul>
-          </div>
-          <div class="footer-col-4">
-            <h3>Folow Us</h3>
-            <ul>
-              <li>Facebook</li>
-              <li>Twiter</li>
-              <li>Instagram</li>
-              <li>Youtube</li>
-            </ul>
-          </div>
-        </div>
-        <hr />
-        <p class="copyrighrt">Copyrighrt &#169; 2021 - Alex Balak</p>
-      </div>
-    </footer>
-  </body>
-  <script src="js/script.js"></script>
+        </footer>
+    </body>
+    <script src="js/script.js"></script>
 </html>
